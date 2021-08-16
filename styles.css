@@ -104,7 +104,7 @@ nav li > a {
 }
 
 .header-intro {
-  background-image: url(./img/section1.jpg);
+  background-image: url('./img/section1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
