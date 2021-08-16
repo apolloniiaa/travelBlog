@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Travelly';
+  src: url('./font/High\ Summit.otf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Light';
+  src: url('./font/Spectral-Light.ttf') format('woff2');
+}
+.burger {
+  display: none;
+}
+nav {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  padding: 1rem;
+  align-items: center;
+  background-color: #79afb790;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+nav li {
+  padding: 0px 10px;
+}
+nav li > a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.nav-hover * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.nav-hover li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.4em 0.8em;
+  padding: 0;
+}
+.nav-hover a {
+  padding: 0 0.7em;
+  color: rgba(255, 255, 255, 0.801);
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.nav-hover a:before {
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+  left: 15%;
+  right: 15%;
+  top: 0;
+  bottom: 0;
+  border-left: 3px solid rgb(135, 130, 96);
+  border-right: 3px solid rgb(135, 130, 96);
+}
+
+.nav-hover a:hover,
+.nav-hover .current a {
+  color: #ffffff;
+}
+.nav-hover a:hover:before,
+.nav-hover .current a:before {
+  opacity: 1;
+  left: 0;
+  right: 0;
+}
+
+#logo {
+  font-family: 'Travelly';
+  padding: auto;
+  color: #ffffff;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+#logo span {
+  color: #341b00;
+}
+
+.header-intro {
+  background-image: url(../img/section1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  padding: 3rem;
+}
+
+.header-intro > h1 {
+  line-height: 2;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+}
+
+.header-intro > p {
+  font-size: 2rem;
+  text-shadow: 1px 1px #484848b3;
+}
+
+main {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.div-container img {
+  width: 50%;
+}
+
+.left-container {
+  display: flex;
+}
+
+.left-container:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.left-container:nth-child(2n) .post {
+  flex-direction: row;
+}
+
+.left-container:nth-child(2n) .post p {
+  text-align: end;
+}
+
+.left-container:nth-child(2n) .post h3 {
+  text-align: end;
+}
+
+.post {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 1rem;
+}
+
+.left-container .post:hover {
+  color: #3e3e3ea8;
+}
+
+.post-1 {
+  background-color: #bdac67;
+  color: #484848;
+}
+.post-2 {
+  background-color: #b7b280;
+  color: #484848;
+}
+.post-3 {
+  background-color: #b2d2dc;
+  color: #484848;
+}
+.post-4 {
+  background-color: #e3ccc0;
+  color: #484848;
+}
+
+.post article h3 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.post article p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 0.7rem;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.date .day {
+  font-size: 2rem;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+aside img {
+  width: 100%;
+}
+
+.right-container {
+  border: 1px solid #484848;
+  font-size: 0.7rem;
+  color: #484848;
+}
+
+.right-container button {
+  border: 1px solid #484848;
+  margin: 1.5rem 0 0.5rem 0;
+  font-size: 0.01rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  font-weight: 200;
+  color: #484848;
+  text-align: center;
+}
+
+.right-container button:hover {
+  border-bottom: 1px solid #484848;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  background-color: transparent;
+}
+
+.news-2 {
+  margin: 1rem;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.news-1 {
+  margin: 1rem;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.news-2 h3 {
+  margin: 2.2rem auto;
+  font-size: 2.4em;
+  font-weight: 100;
+}
+
+.news-1 h3 {
+  margin: 2.2rem auto;
+  font-size: 2.4em;
+  font-weight: 100;
+}
+
+footer {
+  width: 100%;
+  background-color: #79afb7b3;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  line-height: 1.4;
+  padding: 1.2rem;
+  font-size: 0.5rem;
+}
+
+@media only screen and (max-width: 1280px) {
+  .burger span {
+    background-color: #ffffff;
+    display: block;
+    margin: 4px 0;
+    width: 30px;
+    height: 3px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  nav {
+    padding: 4rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul {
+    display: none;
+  }
+
+  aside {
+    flex-shrink: 1.2;
+  }
+
+  #logo {
+    margin: 0 auto;
+    font-size: 2.4rem;
+    margin-top: 5rem;
+  }
+
+  .header-intro {
+    height: 60vh;
+  }
+
+  .header-intro > h1 {
+    line-height: 1.1;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+  }
+
+  .header-intro > p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .left-container {
+    flex-direction: column;
+  }
+
+  .left-container:nth-child(2n) {
+    flex-direction: column;
+  }
+
+  .div-container img {
+    width: 100%;
+  }
+
+  .date {
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .post {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .left-container:nth-child(2n) .post {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .left-container:nth-child(2n) .post p {
+    text-align: start;
+  }
+
+  .left-container:nth-child(2n) .post h3 {
+    text-align: start;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    line-height: 1.7;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .footer-right p {
+    margin-top: 1rem;
+    line-height: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .header-intro {
+    height: 100vh;
+    padding: 1.5rem;
+  }
+  .header-intro > h1 {
+    line-height: 1.2;
+    font-size: 2.5rem;
+    font-weight: 100;
+  }
+
+  .header-intro > p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  .post article h3 {
+    font-size: 3rem;
+  }
+}
